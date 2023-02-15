@@ -50,12 +50,12 @@ function verificarMatrixRepetida(sudo) {
   for (let x = 0; x < sudo.length; x++) {
     const element = sudo[x];
 
-    if (checkArrays(sudo[x], sudo[x + 1])) return true;
+    if (verificaArray(sudo[x], sudo[x + 1])) return true;
   }
   return false;
 }
 
-function checkArrays(a1, a2) {
+function verificaArray(a1, a2) {
   return JSON.stringify(a1) === JSON.stringify(a2);
 }
 
